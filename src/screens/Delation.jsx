@@ -4,12 +4,10 @@ import "../screens/Delation.css"
 
 const Delation = () => {
     return (
-        <div>
-        
-        <div className="backgroundImg">
-            <Form />
-            
-        </div>
+        <div className="formContainer">
+            <div className="form">
+                <Form />
+            </div>
         </div>
     )
 }

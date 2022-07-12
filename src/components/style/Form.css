@@ -12,13 +12,19 @@ https://www.zonecss.fr/proprietes-css/box-sizing-css.html#WJwJqZ00000.codepen
 label{
     font-family: 'Cormorant SC', serif;
     font-size: 20px;
+    font-weight: bold;
 }
 
 label:hover{
     color: rgb(227, 216, 203);
 }
 
-input[type=text], textarea, input[type=email] {
+input::placeholder, textarea::placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+input[type=text], textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -31,10 +37,13 @@ input[type=text], textarea, input[type=email] {
   resize: vertical;
   background: rgba(95, 36, 15, 0.3) ;
   font-family: 'Cormorant SC', serif;
+  font-weight: bold;
 }
+
 label{margin-right: 0px;
   margin-left: 0px;
-  width: 100%;}
+  width: 100%;
+}
 
 input[type=submit] {
   background-color: rgba(153, 44, 4, 0.75);
@@ -55,17 +64,16 @@ input[type=submit]:hover {
   border-radius:5px;
   background-color: rgba(95, 36, 15, 0.3);
   padding:20px;
-  width: 100%;
+  width: 40vw;
   /* redéfinition 400 + 2*20 */
-  max-width: 440px;
   margin:0 auto;
-  margin-top: 100px;
   backdrop-filter: blur(8px);
   box-shadow: -4px -10px 263px 19px rgba(153, 44, 4, 0.75);
--webkit-box-shadow: -4px -10px 263px 19px rgba(188,57,8,0.75);
--moz-box-shadow: -4px -10px 263px 19px rgba(188,57,8,0.75);
-  
+  -webkit-box-shadow: -4px -10px 263px 19px rgba(188,57,8,0.75);
+  -moz-box-shadow: -4px -10px 263px 19px rgba(188,57,8,0.75);
+  height: 60vh;
 }
+
 .h1form  {
   color: rgb(227, 216, 203);
   width: 100%;

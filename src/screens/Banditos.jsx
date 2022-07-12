@@ -23,7 +23,7 @@ const Banditos = () =>{
     <div className="banditosContainer">
       
         <div className="banditos">
-            <h1> Les bandits les plus recherchés du farwest ! </h1>
+            <h1 className="banditosTilte"> Les bandits les plus recherchés du farwest ! </h1>
             <img src={Guns} alt="guns" />
             
             <div className="banditosCards">
