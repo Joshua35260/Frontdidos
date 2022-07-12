@@ -1,0 +1,12 @@
+.banditosContainer {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  background: no-repeat;
+  background-image: url("../img/desert.jpg") ;
+  background-size:cover ;
+}
+
+.banditosTilte{
+  padding-top: 4%;
+  margin-top: 0;
+}

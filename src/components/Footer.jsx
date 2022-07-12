@@ -2,24 +2,21 @@ import {Link} from "react-router-dom";
 import Home from "../screens/Home";
 
 import "./style/Footer.css";
-import homeLogo from "../img/bandidosLogo.png"
+import footerlogo from "../img/bandidos.png"
 
 
 const Footer = () =>{
     return(
         <div className="footerContainer">
-        <p>Copyright Ⓒ -Bandidos- 2022</p>
+            <Link to="/" element= {<Home/>}>
+                <img className="footerLogo" src={footerlogo} alt="logo"/>
+            </Link>
+        <p className="copyright">Copyright Ⓒ -Bandidos- 2022</p>
             <div className="footerLink">
-                <Link to="/" element= {<Home/>} style={{ textDecoration: 'none' }}>
-                    <p>Home</p>
-                    <img className="footerLogo" src={homeLogo} alt="logo"/>
-                </Link>
-                {/* <Link to="/" element= {<Contact/>}>
-                    <img className="footerLogo" src="./img/BANDIDOS.png" alt="logo"/>
-                </Link> */}
-                {/* <Link to="/bandits" element= {<Bandits/>}>
-                    <img className="footerLogo" src="./img/BANDIDOS.png" alt="logo"/>
-                </Link> */}
+                <ul>
+                    <li><Link to="/banditos">Avis de recherche</Link></li>
+                    <li><Link to="/delation">Délation</Link></li>
+                </ul>
             </div>
         </div>
 )};
