@@ -1,4 +1,5 @@
-import paysage from "../img/firstimg.png"
+import paysage from "../img/paysage.png"
+import "./style/Concept.css"
 
 const Concept = () => {
     return ( <div className="generalPres"> 

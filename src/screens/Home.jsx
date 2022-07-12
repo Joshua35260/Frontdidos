@@ -4,11 +4,11 @@ import Concept from "../components/Concept";
 
 const Home = () =>{
     return (
-        <div className="homeContainer">
+    <div className="homeContainer">
         <Header/>
         <Concept/>
         <Footer/>
-    </div>
-)};
+    </div>)
+};
 
 export default Home;

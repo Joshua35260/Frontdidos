@@ -1,10 +1,10 @@
-import Home from './screens/Home';
+import Home from "../src/screens/Home.jsx";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Home />
     </div>
   );
 }
