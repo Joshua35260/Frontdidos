@@ -44,7 +44,7 @@
     line-height: 1.5em;
     color: rgb(227, 216, 203);
     font-weight: bolder;
-    width: 48ch;
+    width: 100%;
 }
 .bullet {
     display: flex;
@@ -62,13 +62,17 @@
 
 .farwest{
     width: 100%;
+    position: relative;
+    transform: scale(1);
+    bottom: 40px;
+
 }
 
 .lastSection{
     display: flex;
     background: black;
     color: rgb(227, 216, 203);
-    box-shadow: 2px -54px 100px 139px #000;
+    box-shadow: 2px -114px 100px 139px #000;
     height: 900px;
 }
 
@@ -158,3 +162,64 @@
   .button:hover .box:before {
     transform: translateY(0);
   }
+
+
+  @media screen and (max-width: 1566px){
+    .farwest{
+      width: 90%;
+      position: relative;
+      transform: scale(1);
+      bottom: 40px;
+  
+  } 
+  }
+
+  @media screen and (max-width : 1560px){
+  
+    .farwest{
+     width: 0;
+     height: 0;
+  
+  }
+  .firstSection{
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 300px;
+
+  }
+  .lastSection{
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .gun {
+    width: 50%;
+    padding-top: 30px;
+  }
+  .desc{
+    text-align: center;
+   
+  }
+  .explparag{
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .button {
+    display: flex;
+    padding-top: 80px;
+  }
+  .bullet{
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width : 750px){
+  .desc{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+   
+  }
+}

@@ -1,4 +1,4 @@
-import paysage from "../img/landesert.png"
+import paysage from "../img/land.png"
 import "./style/Concept.css"
 import gun from "../img/gun.png"
 import bullet from "../img/bullete.png"
