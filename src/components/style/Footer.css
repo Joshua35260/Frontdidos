@@ -1,0 +1,36 @@
+.footerContainer {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #988574;
+  box-shadow: inset 4px 4px 4px 4px black;
+  font-family: 'Rye', cursive;
+  font-size:1.4rem;
+  position: abso
+
+}
+.footerLogo {
+  display: flex;
+  margin-top: 0.2em;;
+  max-height: 100px;
+
+}
+
+.footerLink a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(42, 37, 37);
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.copyright {
+ margin-top: 4em;
+}
+

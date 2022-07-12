@@ -2,29 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
 
+
+
 .firstSection{
     display: flex;
     background: #220901 ;
     color: rgb(227, 216, 203);
     width: 100%;
-    height: 550px;
+    height: 750px;
+    padding-top: 50px;
 }
 
 .description{
-   
+   width: 100%;
     padding-right: 100px; 
     text-align: center;
+    color: rgb(227, 216, 203);
 }
 
-h1{
+.title{
     font-family: 'Rye', cursive;
     font-size: 100px;
-
-    text-shadow: 7px 6px 20px #F66A42;
+  text-shadow: 7px 6px 20px #F66A42;
+  color: rgb(227, 216, 203);
     
 }
 
-p{
+.desc{
     margin: 2px;
    padding-left:100px ;
    padding-right: 100px;
@@ -32,14 +36,108 @@ p{
     font-size: 20px;
     text-align: left;
     line-height: 30px;
+    color: rgb(227, 216, 203);
 }
-
+.bullet{
+    height: 200px;
+    padding-top: 45px;
+}
 .farwest{
     transform: scale(1.75);
     width: 100%;
     padding-right: 60px;
     position: relative;
-    top: 65px;
+    top: 105px;
+}
+
+.lastSection{
+    display: flex;
+    background: black;
+    color: rgb(227, 216, 203);
+    box-shadow: 2px -54px 100px 39px #000;
+    height: 900px;
+}
+
+
+.explication{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
+.explparag{
+    padding-left: 30px;
+    padding-right: 80px;
+    text-align: right;
+    font-family: 'Cormorant SC', serif;
+    line-height: 30px;
+    color: rgb(227, 216, 203);
+    font-size: 20px;
+}
+
+.button {
+    display: flex;
+    padding-top: 100px;
+  }
+  
+  .box {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: #d75a06;;
+    overflow: hidden;
+    font-family: 'Rye', cursive;
+  }
+  
+  .box:before {
+    content: "P";
+    position: absolute;
+    top: 0;
+    background: #621708;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
+  }
+  
+  .box:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'A';
+  }
+  
+  .box:nth-child(3)::before {
+    content: 'N';
+  }
+  
+  .box:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'P';
+  }
+  
+  .box:nth-child(5)::before {
+    content: 'A';
+  }
+  .box:nth-child(6)::before {
+    transform: translateY(-100%);
+    content: 'N';
+  }
+  .box:nth-child(7)::before {
+    content: '!';
+  }
+  
+  .button:hover .box:before {
+    transform: translateY(0);
+  }
