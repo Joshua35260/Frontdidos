@@ -1,42 +1,222 @@
-ul, a {
-  list-style: none;
-  text-decoration: none;
-  margin-inline: 2em;
-  color:#e3d8cb;
-  z-index: 50;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.blue-text {
+  text-shadow: 1px 1px 2px blue, 0 0 1em blue, 0 0 0.2em blue;
 }
 
-a:hover {
-  color: #ffffff;
-  transition: background-color, 0.25s ease-out 100ms;
-  text-decoration: none;
-  cursor: pointer;
- }
+.red-text {
+  text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+}
+body {
+  font-family: Montserrat, Helvetica, sans-serif;
+  background: #FFF;
+}
 
-.headerContainer {
-  background-color: #220901;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+nav {
   width: 100%;
-  height: 10vh;
-  z-index: 50;
-
-}
-
-.bandidosLogo {
-  height: 9vh;
-
-}
-
-.pages {
-  justify-content: space-between;
   display: flex;
-  margin: 2px;
-  font-size: 1.5rem;
-  font-family: 'Rye', cursive;
-  text-shadow: 7px 6px 20px #303030;
-
-    
+  align-items: center;
+  padding: 15px 25px;
+  box-shadow: inset 0px -1px 0px #c5c5c6;
 }
+.blue-background{
+  background-color: #220901;
+  height: 100px;
+}
+
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-icon span {
+  font-family: Roboto Flex, sans-serif;
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 400;
+  color: #333;
+}
+.nav-icon img {
+  height: 90px;
+}
+.hamburger {
+  display: none;
+}
+.navlinks-container a {
+  display: flex;
+  margin: 0 40px;
+  font-size: 24px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #FFF;
+  display: inline-block;
+  position: relative;
+}
+.navlinks-container a:hover {
+  color: rgb(11, 12, 13);
+}
+.navlinks-container a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #cdcece;
+  transition: transform 0.3s ease-out;
+}
+
+.navlinks-container a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-authentication {
+  margin-left: auto;
+}
+
+.sign-btns button {
+  font-family: Roboto Flex, sans-serif;
+  font-size: 16px;
+  min-width: 90px;
+  padding: 10px 5px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.sign-btns button:nth-child(1) {
+  border: none;
+  background: #92c3eeb7;
+}
+.sign-user {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  nav {
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .nav-icon {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .nav-icon span {
+    font-size: 22px;
+  }
+
+  .main-navlinks {
+    order: 1;
+  }
+  /* Hamburger */
+  .hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    background-color: #062027;
+    align-items: center;
+    position: relative;
+  }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s 0.15s ease-out;
+  }
+  .hamburger span:nth-child(1),
+  .hamburger span:nth-child(3) {
+    transition: transform 0.3s ease-out;
+  }
+  .hamburger span:nth-child(1) {
+    transform: translateY(7px);
+  }
+  .hamburger span:nth-child(3) {
+    transform: translateY(-7px);
+  }
+  .hamburger.open span:nth-child(1) {
+    transform: translate(0) rotate(135deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translate(0) rotate(-135deg);
+  }
+
+  .navlinks-container {
+    z-index: 51;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    background-color: #621708;
+    top: 100%;
+    left: 0;
+    height: 100vh;
+    padding: 15px 50px 15px 20px;
+    border-right: 1px solid #c5c5c6;
+    transform: translate(-100%);
+    transition: transform 0.3s ease-out;
+  }
+  .open {
+    transform: translate(0%);
+    transition: transform 0.3s ease-out;
+  }
+  .navlinks-container a {
+    font-size: 24px;
+    margin: 30px 0;
+    
+
+  }
+
+  .nav-authentication {
+    order: 3;
+    margin-left: 0;
+  }
+  .sign-btns {
+    display: none;
+  }
+  .sign-user {
+    display: block;
+    cursor: pointer;
+    border: none;
+  }
+  .sign-user img {
+    width: 35px;
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-icon img {
+    width: 80px;
+  }
+  .nav-icon span {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+ 
