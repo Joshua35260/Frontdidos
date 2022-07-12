@@ -1,12 +1,13 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './screens/Home';
+import Home from "../src/screens/Home.jsx";
 import './App.css';
+import Concept from './components/Concept.jsx';
 
 function App() {
   return (
     <div className="App">
       <p>poulet</p>
-      <Home/>
+      <Home />
       {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/bandits' element={<Bandits />} />
