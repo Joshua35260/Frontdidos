@@ -12,9 +12,8 @@ const Form = () => {
           <label for="sujet">Localisation</label>
           <input type="text" id="sujet" name="sujet" placeholder="Ahlowa" />
       
-          <label for="emailAddress">Prime</label>
-          <input id="emailAddress" type="email" name="email" placeholder="$$$" />
-      
+          <label for="prime">Prime</label>
+          <input id="prime" type="text" name="prime" placeholder="$$$" />
       
           <label for="subject">Quel type de criminel ?</label>
           <textarea id="subject" name="subject" placeholder="Votre message"></textarea>
@@ -22,7 +21,6 @@ const Form = () => {
           <input type="submit" value="Envoyer" />
         </form>
       </div>
-      
     )
 }
 

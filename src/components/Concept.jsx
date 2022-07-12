@@ -1,4 +1,4 @@
-import paysage from "../img/paysage.png"
+import paysage from "../img/landesert.png"
 import "./style/Concept.css"
 import gun from "../img/gun.png"
 import bullet from "../img/bullete.png"
@@ -14,8 +14,6 @@ const Concept = () => {
         <div className="illustration">
            <img className="farwest" src={paysage} alt="paysage"/> 
         </div>
-         
-         
     </div>
    
     <div className="lastSection">

@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 
-import bandidosLogo from '../img/bandidos.png';
+import bandidosLogo from '../img/1.png';
 
 import './style/Header.css';
 
