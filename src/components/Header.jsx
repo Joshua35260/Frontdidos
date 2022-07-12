@@ -1,19 +1,23 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
-import bandidoslogo from '../img/bandidos.png'
+import bandidosLogo from '../img/bandidos.png';
 
 import './style/Header.css';
 
 const Header = () => {
     return (
-      <header className="headerContainer">
-        <img src={bandidoslogo} className="bandidos-logo" alt="logo" />
-        <ul>
-            <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/">Vos malfrats</Link></li>
-            <li><Link to="/">Délation</Link></li>
+    <header className='headerContainer'>
+        <img src={bandidosLogo} className="bandidosLogo" alt="logo" />
+        {/* <NavLink to="/">Concept</NavLink>
+        <NavLink to="/">Vos malfrats</NavLink>
+        <NavLink to="/">Délation</NavLink> */}
+
+        <ul className='pages'>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/banditos">Avis de recherche</NavLink></li>
+            <li><NavLink to="/delation">Délation</NavLink></li>
         </ul>
-      </header>
+        </header>
     );
 }
 
