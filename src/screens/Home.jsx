@@ -3,11 +3,12 @@ import Header from "../components/Header";
 import Concept from "../components/Concept";
 
 const Home = () =>{
-    <div className="homeContainer">
+    return (
+        <div className="homeContainer">
         <Header/>
         <Concept/>
         <Footer/>
     </div>
-};
+)};
 
 export default Home;

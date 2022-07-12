@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 
-import bandidos-logo from '../img/BANDIDOS.png'
+import bandidosLogo from '../img/bandidosLogo.png';
 
 import './style/Header.css';
 
 const Header = () => {
     return (
       <header className="headerContainer">
-        <img src={bandidos-logo} className="bandidos-logo" alt="logo" />
+        <img src={bandidosLogo} className="bandidos-logo" alt="logo" />
         <ul>
             <li><Link to="/">Accueil</Link></li>
             <li><Link to="/">Vos malfrats</Link></li>
@@ -17,4 +17,4 @@ const Header = () => {
     );
 }
 
-export default Header
+export default Header;

@@ -1,0 +1,14 @@
+.footerContainer{
+    background-color: #220901;
+    min-height:10vh;
+}
+
+.footerLink{
+    display : flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top:1rem;
+    font-size: 2rem;
+    color: #F6AA1C;
+    
+}
