@@ -2,8 +2,14 @@ import { Link, NavLink } from 'react-router-dom';
 import bandidosLogo from '../img/1.png';
 import Player from './Player';
 import './style/Header.css';
+import ReactPlayer from 'react-player'
+import { useState } from 'react';
 
-const Header = () => {
+const Header = () => { 
+  const[isplaying, setisplaying] = useState(false)
+  const[play, setPlay] = useState(false)
+  const songUrl = 'https://www.youtube.com/watch?v=6FrlCfkffVI'
+
     const toggleNav = () => {
       const hamburgerToggler = document.querySelector(".hamburger");
       const navLinksContainer = document.querySelector(".navlinks-container");
@@ -50,7 +56,15 @@ const Header = () => {
   
           </div>
         </div>
+        <div className='Music'>
+        <Player isplaying={isplaying} setisplaying={setisplaying} play={play} setPlay={setPlay}/>
+        
+        </div>
+        <div className='hidden-player'>{play ?<ReactPlayer url={songUrl} playing={true} config={{youtube: {playerVars: {disablekb: 1}}}} height='1px' width='1px'/> : <ReactPlayer url={songUrl} playing={false} height='1px' width='1px'/>}
+        </div>
+        
       </nav>
+      
     );
   };
   
