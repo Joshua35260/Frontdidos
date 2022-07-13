@@ -1,0 +1,50 @@
+.containerDetails{
+    height: 100vh;
+    background-image: url("/src/img/screen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posterDetails{
+    width: 1000px;
+    height: 800px;
+    box-sizing: border-box;
+    background-image: url('https://i.imgur.com/Y9Tiq8a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    box-shadow: 2px 4px 8px 3px #000000;
+    font-family: 'Rye', cursive;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    filter: sepia(60%);
+}
+.profilDetails{
+    font-weight: bolder;
+}
+.descriptionDetails{
+    text-align:justify;
+    line-height: 2em;
+    font-size: 20px;
+    width: 400px;
+}
+.imgDetails{
+    height: 500px;
+    width: 400px;
+}
+.wantedDetails{
+    line-height: 1.5em;
+    font-family: ewert;
+    color: #291200; 
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0px;
+}

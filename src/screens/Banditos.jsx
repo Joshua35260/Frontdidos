@@ -5,6 +5,8 @@ import Filter from "../components/Filter";
 import Bandito from "../components/Bandito";
 import "../screens/Banditos.css"
 import Guns from "../img/guns.png"
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 import axios from "axios";
@@ -143,8 +145,9 @@ const Banditos = () =>{
                         }
                     </div>
                 
-            
+
                     <div className="banditosCards">
+                         
                         {/* .map de l'axios pour récuperer les avis de recherche. */}
                             {!noCreteria  && bandidosFilter.length
                                 ? bandidosFilter.map((bandito)=>(
@@ -170,8 +173,9 @@ const Banditos = () =>{
                                     image={bandito.image}
                                     prime={bandito.prime}
                                     />
-                                ))}
+                              ))} 
                     </div>
+
                 </div>                
             </div>
     </div>
