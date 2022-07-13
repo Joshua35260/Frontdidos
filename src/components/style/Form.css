@@ -85,3 +85,12 @@ input[type=submit]:hover {
     color: rgb();
     text-shadow: 7px 6px 20px rgb(227, 216, 203),
 }
+
+@media screen and (max-width: 500px) {
+  .h1form {
+      color: rgb(0, 14, 104);
+      width: 100%;
+      font-family: 'Rye', cursive;
+      text-shadow: 7px 6px 20px #F66A42;
+  }
+}
