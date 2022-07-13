@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import { MapContainer, TileLayer, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer } from 'react-leaflet'
 import { Leaflet } from '../components/Leaflet'
 import Filter from "../components/Filter";
 import Bandito from "../components/Bandito";
@@ -107,8 +107,8 @@ const Banditos = () =>{
                             {!noCreteria  && bandidosFilter.length
                             && bandidosFilter.map((bandito)=>(
                                 <Leaflet
-                                key={bandito.id}
-                                id={bandito.id}
+                                key={bandito.idbandits}
+                                id={bandito.idbandits}
                                 name={bandito.name}
                                 surname={bandito.surname}
                                 rating={bandito.rating}
@@ -124,8 +124,8 @@ const Banditos = () =>{
                             banditos !== null &&
                             banditos.map ((bandito)=> (
                                 <Leaflet
-                                key={bandito.id}
-                                id={bandito.id}
+                                key={bandito.idbandits}
+                                id={bandito.idbandits}
                                 name={bandito.name}
                                 surname={bandito.surname}
                                 rating={bandito.rating}
@@ -146,8 +146,8 @@ const Banditos = () =>{
                             {!noCreteria  && bandidosFilter.length
                                 ? bandidosFilter.map((bandito)=>(
                                         <Bandito
-                                        key={bandito.id}
-                                        id={bandito.id}
+                                        key={bandito.idbandits}
+                                        id={bandito.idbandits}
                                         name={bandito.name}
                                         image={bandito.image}
                                         prime={bandito.prime}
@@ -161,8 +161,8 @@ const Banditos = () =>{
                             banditos !== null &&
                                 banditos.map ((bandito)=> (
                                     <Bandito
-                                    key={bandito.id}
-                                    id={bandito.id}
+                                    key={bandito.idbandits}
+                                    id={bandito.idbandits}
                                     name={bandito.name}
                                     image={bandito.image}
                                     prime={bandito.prime}

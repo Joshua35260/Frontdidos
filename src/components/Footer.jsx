@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import Home from "../screens/Home";
 
 import "./style/Footer.css";
-import footerlogo from "../img/BANDIDOS.png"
+import footerlogo from "../img/bandidos.png"
 
 
 const Footer = () =>{
