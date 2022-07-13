@@ -9,7 +9,7 @@ const Player = ({ isplaying, setisplaying, play, setPlay}) => {
     }
     return (
         <div className="controls">
-    {isplaying ? <ImPause2 className="btn-action" onClick={PlayPause} /> : <ImPlay3 className="btn-action" onClick={PlayPause} /> }
+            {isplaying ? <ImPause2 className="btn-action" onClick={PlayPause} /> : <ImPlay3 className="btn-action" onClick={PlayPause} /> }
         </div>
     )
 }
