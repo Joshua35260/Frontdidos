@@ -1,0 +1,14 @@
+.containerFilter{
+    display: flex;
+    justify-content: center;
+}
+
+.eventFilter {
+margin-left: 10px;
+}
+
+.buttonFilter{
+height: 3vh;
+width: 80px;
+margin-left: 10px;
+}

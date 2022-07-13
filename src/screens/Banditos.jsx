@@ -85,10 +85,11 @@ const Banditos = () =>{
 
     return (
     <div className="banditosContainer">
-      <Filter isCheck={checkCreteria} />
+      
         <div className="banditos">
             <h1 className="banditosTilte"> Les bandits les plus recherchés du farwest ! </h1>
             <img className="guns" src={Guns} alt="guns" />
+            <Filter isCheck={checkCreteria} />
                 <div className="containerLeafletBandito">
                 
                     <div className='wrap-leaf'>
