@@ -21,10 +21,10 @@
    return (
      <>
        <Marker key={id} position={[latitude, longitude]}>
-         <Popup position={[latitude, longitude]}>
+         <Popup position={[latitude, longitude]} >
            <div className='pop_up-contain'>
              <>
-               
+             <img className="popImg" src={require(`../assets/img/${image}`)} alt={name}/>
                <h2>{name}</h2>
                <p>{rating}</p>
                <p>{surname}</p>
