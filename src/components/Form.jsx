@@ -45,7 +45,7 @@ function submit() {
     
         <div className="containerForm">
         <h1 className="h1form">Balance ton Bandit</h1>
-        <form>
+        <form onSubmit={(e) => e.preventDefault()}>
           <label htmlFor="fname">Son Nom</label>
           <input type="text" id="fname" name="firstname" placeholder="El Bandidos" value={name} onChange={(e) => setName(e.target.value)}/>
       

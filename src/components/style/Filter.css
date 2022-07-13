@@ -1,14 +1,15 @@
-.containerFilter{
-    display: flex;
-    justify-content: center;
+.containerFilter {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(8px);
 }
 
 .eventFilter {
-margin-left: 10px;
+  margin-left: 10px;
 }
 
-.buttonFilter{
-height: 3vh;
-width: 80px;
-margin-left: 10px;
+.buttonFilter {
+  height: 3vh;
+  width: 80px;
+  margin-left: 10px;
 }
