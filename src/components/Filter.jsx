@@ -1,5 +1,5 @@
 import {useState} from 'react'
-
+import "./style/Filter.css";
 
 
 const Filter = ({isCheck})=> {
@@ -28,9 +28,9 @@ const Filter = ({isCheck})=> {
 
 
     return (
-        <div>
+        <div className='containerFilter'>
         <select
-            className='selectForm eventForm'
+            className='selectForm eventFilter'
             id='selectville'
             onChange={e => handleChange(e.target)}
           >
@@ -60,7 +60,7 @@ const Filter = ({isCheck})=> {
           </select>
 
           <select
-            className='selectForm eventForm'
+            className='selectForm eventFilter'
             id='selectRating'
             onChange={e => handleChange(e.target)}>
             <option value= 'Très recherché'>Très recherché</option>
@@ -68,7 +68,7 @@ const Filter = ({isCheck})=> {
           </select>
           
           <select
-            className='selectForm eventForm'
+            className='selectForm eventFilter'
             id='selectprime'
             onChange={e => handleChange(e.target)}
           >
@@ -80,9 +80,9 @@ const Filter = ({isCheck})=> {
             <option value='6'>supérieur à 25 000$</option>
           </select> 
           <button
-            className='buttonForm buttonEvent'
+            className='buttonFilter'
             onClick={e => isCheck(e, creteria)}
-          ></button>
+          >Recherche</button>
         </div>
  )
 }

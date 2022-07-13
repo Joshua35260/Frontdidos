@@ -85,10 +85,11 @@ const Banditos = () =>{
 
     return (
     <div className="banditosContainer">
-      <Filter isCheck={checkCreteria} />
+      
         <div className="banditos">
             <h1 className="banditosTilte"> Les bandits les plus recherchés du farwest ! </h1>
             <img className="guns" src={Guns} alt="guns" />
+            <Filter isCheck={checkCreteria} />
                 <div className="containerLeafletBandito">
                 
                     <div className='wrap-leaf'>
@@ -148,6 +149,7 @@ const Banditos = () =>{
                                         <Bandito
                                         key={bandito.id}
                                         id={bandito.id}
+                                        surname={bandito.surname}
                                         name={bandito.name}
                                         image={bandito.image}
                                         prime={bandito.prime}
@@ -163,6 +165,7 @@ const Banditos = () =>{
                                     <Bandito
                                     key={bandito.id}
                                     id={bandito.id}
+                                    surname={bandito.surname}
                                     name={bandito.name}
                                     image={bandito.image}
                                     prime={bandito.prime}
