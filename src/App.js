@@ -5,8 +5,8 @@ import Delation from "./screens/Delation.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "../src/screens/Home.jsx";
 import Header from "./components/Header.jsx";
-
-// import { useState } from "react";
+import BanditosDetails from "./components/Banditodetails.jsx";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/banditos" element={<Banditos />} />
         <Route path="/delation" element={<Delation />} />
+        <Route path="/bandits/:id" element={<BanditosDetails />} />
         {/* <Route path='/informers' element={<Informers />} /> */}
         {/* <Route path='/contact' element={<Contact />} />  */}
       </Routes>
