@@ -5,15 +5,16 @@
  import './style/Leaflet.css'
 
  export const Leaflet = ({
- surname,
-   name,
-   image,
-   id,
-   ville,
-   rating,
-   armes,
-   latitude,
-   longitude
+  surname,
+  name,
+  image,
+  id,
+  ville,
+  rating,
+  armes,
+  latitude,
+  longitude,
+  prime
  }) => {
    let navigate = useNavigate()
    // const position = [41.249335, -104.668069]
@@ -25,14 +26,16 @@
            <div className='pop_up-contain'>
              <>
              <img className="popImg" src={require(`../assets/img/${image}`)} alt={name}/>
-               <h2>{name}</h2>
-               <p>{rating}</p>
-               <p>{surname}</p>
-               <p>{armes}</p>
+             <h2>{surname}</h2>
+               <p>nom: {name}</p>
+               <p>armes: {armes}</p>
+               <p>ville: {ville}</p>
+               <p className='LFprime'>💰 {prime} $</p>
+               <p className='rating'>☠️{rating}☠️</p>
              </>
              <button
                className='leaflet_btn__card'
-               onClick={() => navigate(`/banditos/${id}`)}
+               onClick={() => navigate(`/bandits/${id}`)}
              >
                Détail
              </button>

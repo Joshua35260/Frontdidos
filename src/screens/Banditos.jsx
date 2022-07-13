@@ -3,7 +3,6 @@ import { MapContainer, TileLayer } from 'react-leaflet'
 import { Leaflet } from '../components/Leaflet'
 import Filter from "../components/Filter";
 import Bandito from "../components/Bandito";
-
 import "../screens/Banditos.css"
 import Guns from "../img/guns.png"
 
@@ -87,7 +86,7 @@ const Banditos = () =>{
     <div className="banditosContainer">
       
         <div className="banditos">
-            <h1 className="banditosTilte"> Les bandits les plus recherchés du farwest ! </h1>
+            <h1 className="banditosTitle">☠️  Les bandits les plus recherchés du farwest ! ☠️</h1>
             <img className="guns" src={Guns} alt="guns" />
             <Filter isCheck={checkCreteria} />
                 <div className="containerLeafletBandito">
@@ -114,10 +113,11 @@ const Banditos = () =>{
                                 surname={bandito.surname}
                                 rating={bandito.rating}
                                 image={bandito.image}
-                                armes={bandito.arme}
+                                armes={bandito.armes}
                                 prime={bandito.prime}
                                 latitude={bandito.latitude}
                                 longitude={bandito.longitude}
+                                ville={bandito.ville}
                                 />
                             ))}
 
@@ -131,10 +131,12 @@ const Banditos = () =>{
                                 surname={bandito.surname}
                                 rating={bandito.rating}
                                 image={bandito.image}
-                                armes={bandito.arme}
+                                armes={bandito.armes}
                                 prime={bandito.prime}
                                 latitude={bandito.latitude}
                                 longitude={bandito.longitude}
+                                ville={bandito.ville}
+                                
                                 />
                             ))}
                         </MapContainer>
@@ -149,7 +151,7 @@ const Banditos = () =>{
                                         <Bandito
                                         key={bandito.idbandits}
                                         id={bandito.idbandits}
-                                        name={bandito.name}
+                                        name={bandito.surname}
                                         image={bandito.image}
                                         prime={bandito.prime}
                                         />
@@ -164,7 +166,7 @@ const Banditos = () =>{
                                     <Bandito
                                     key={bandito.idbandits}
                                     id={bandito.idbandits}
-                                    name={bandito.name}
+                                    name={bandito.surname}
                                     image={bandito.image}
                                     prime={bandito.prime}
                                     />

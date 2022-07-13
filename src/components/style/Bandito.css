@@ -1,75 +1,84 @@
 @import url(https://fonts.googleapis.com/css?family=Ewert);
 @import url(https://fonts.googleapis.com/css?family=Ultra);
-
-
-.linkDetails{
-    text-decoration: none;
-    list-style-type: none;
-    color: #000000;
+.leaflet-container {
+  border: 2px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Cormorant SC", serif;
+  font-weight: bold;
+  box-shadow: 2px 4px 8px 3px #000000;
+}
+.banditosTitle {
+  font-family: "Cormorant SC", serif;
+  font-weight: bolder;
+}
+.linkDetails {
+  text-decoration: none;
+  list-style-type: none;
+  color: #000000;
 }
 
 .poster {
-    width: 480px;
-    height: 640px;
-    box-sizing: border-box;
-    background-image: url('https://i.imgur.com/Y9Tiq8a.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align:center;
-    box-shadow: 2px 4px 8px 3px #000000;
-    font-family: Monospace;
-    font-size: 18px;
-    font-style: italic;
-    margin: 0.5rem;
-
+  width: 480px;
+  height: 640px;
+  box-sizing: border-box;
+  background-image: url("https://i.imgur.com/Y9Tiq8a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  box-shadow: 2px 4px 8px 3px #000000;
+  font-family: Monospace;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0.5rem;
 }
-.price{
-    font-family: Ultra;
-    font-size: 28px;
-    color: #291200;
-    text-decoration-line: underline;
-    text-decoration-style: double;
+.price {
+  font-family: Ultra;
+  font-size: 28px;
+  color: #291200;
+  text-decoration-line: underline;
+  text-decoration-style: double;
 }
 .mugshot {
-    width: 300px;
-    height: 325px;
-    border: 2px solid #291200;
+  width: 300px;
+  height: 325px;
+  border: 2px solid #291200;
 }
 .wanted {
-    font-family: ewert;
-    color: #291200; 
-    font-size: 44pt;
-    font-weight: normal;
-    margin: 0px;
+  font-family: ewert;
+  color: #291200;
+  font-size: 44pt;
+  font-weight: normal;
+  margin: 0px;
 }
-.name{
-    font-size:32px;
-    margin-bottom: -10px;
-    margin-top: 3px;
-    font-family: Ultra;
-    color: #291200;
-    text-align: center;
+.name {
+  font-size: 32px;
+  margin-bottom: -10px;
+  margin-top: 3px;
+  font-family: Ultra;
+  color: #291200;
+  text-align: center;
 }
-.reward{
-    font-family: ewert;
-    color: #291200;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: -10px;
+.reward {
+  font-family: ewert;
+  color: #291200;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: -10px;
 }
-.subheading{
-    font-family: Ultra;
-    color: #291200;
-    text-align: center;
-    font-size: 24px;
-    margin-top: 5px;
-    margin-bottom: 7px;  
+.subheading {
+  font-family: Ultra;
+  color: #291200;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 7px;
 }
-.description{
-    font-family: Ultra;
-    color: #291200;
-    text-align: center;
+.description {
+  font-family: Ultra;
+  color: #291200;
+  text-align: center;
 }
 .mugshot {
-    filter: sepia(60%);
+  filter: sepia(60%);
 }

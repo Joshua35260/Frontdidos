@@ -49,7 +49,7 @@ nav {
 }
 
 .navlinks-container a:hover {
-  color: rgb(11, 12, 13);
+  color: rgb(247, 144, 69);
 }
 .navlinks-container a::after {
   content: "";
@@ -195,53 +195,53 @@ nav {
   position: relative;
   left: 1600px;
 }
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 2200px) {
   .Music {
     position: relative;
-    left: 1500px;
+    left: 1150px;
   }
 }
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 1980px) {
   .Music {
     position: relative;
-    left: 1500px;
+    left: 1000px;
   }
 }
 @media screen and (max-width: 1800px) {
   .Music {
     position: relative;
-    left: 800px;
+    left: 850px;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .Music {
     position: relative;
-    left: 600px;
+    left: 650px;
   }
 }
 @media screen and (max-width: 1370px) {
   .Music {
     position: relative;
-    left: 500px;
+    left: 550px;
   }
 }
 @media screen and (max-width: 1280px) {
   .Music {
     position: relative;
-    left: 400px;
+    left: 450px;
   }
 }
 @media screen and (max-width: 1180px) {
   .Music {
     position: relative;
-    left: 300px;
+    left: 350px;
   }
 }
 @media screen and (max-width: 1080px) {
   .Music {
     position: relative;
-    left: 200px;
+    left: 250px;
   }
 }
 
@@ -255,6 +255,7 @@ nav {
 @media (max-width: 1080px) {
   .nav-icon img {
     width: 80px;
+    height: 80px;
   }
   .nav-icon span {
     font-size: 20px;

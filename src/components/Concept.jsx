@@ -2,6 +2,7 @@ import paysage from "../img/land.png"
 import "./style/Concept.css"
 import gun from "../img/gun.png"
 import bullet from "../img/bullete.png"
+import { Link } from "react-router-dom"
 
 const Concept = () => {
     return ( <div className="generalPres"> 
@@ -24,6 +25,7 @@ const Concept = () => {
                 <p className="explparag">Vous en avez assez de vous faire piller ou alors vous cherchez un moyen d'arrondir votre fin de mois et n'avez pas peur du danger ?
             Si c'est le cas, vous êtes au bon endroit ! Vous pouvez consultez ici ou mettre à jour des infos sur les têtes mises à prix, comme sur la prime ou le dernier endroit ou le bandit a été vu afin de vous aider dans votre quête de chasseur de primes !
             </p>
+        <Link to="/banditos">
             <div className="button">
     <div className="box">B</div>
     <div className="box">A</div>
@@ -33,6 +35,7 @@ const Concept = () => {
     <div className="box">T</div>
     <div className="box">S</div>
 </div>
+</Link>
     </div>
 </div>
     </div>) 

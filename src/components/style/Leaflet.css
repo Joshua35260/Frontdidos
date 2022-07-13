@@ -1,46 +1,64 @@
 leaflet-popup-content-wrapper {
-    min-height: 200px;
-    min-width: 140px;
-    display: flex;
-    align-items: flex-end;
-    border-radius: 0;
-    }
+  min-height: 200px;
+  min-width: 140px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0;
+}
 
-    .leaflet-popup-content-wrapper{
-        background: #953107!important;    
-    }
+.leaflet-popup-content-wrapper {
+  background: #804329 !important;
+}
 
-    .wrapper-leaf {
-        position: relative;
-        top: 100rem;
-        left: 10rem;
-        right: 10rem;
-        opacity:1;
-        width: 50vw;
-        padding: 2rem;
-        background: rgba(0, 0, 0, 0.233);
-        animation: slide-up 1s ease-in-out 250ms;
-        animation-fill-mode: forwards;
-        /* visibility: hidden; */
-      }
+.wrapper-leaf {
+  position: relative;
+  top: 100rem;
+  left: 10rem;
+  right: 10rem;
+  opacity: 1;
+  width: 50vw;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.233);
+  animation: slide-up 1s ease-in-out 250ms;
+  animation-fill-mode: forwards;
+  /* visibility: hidden; */
+}
 
-    .leaflet-popup-content-wrapper div {
-        display: flex;
-        flex-direction: column;
-        min-height: 200px;
-        min-width: 140px;
-        padding-left: 2px;
-        border-radius: 0;
-      }
+.leaflet-popup-content-wrapper div {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  min-width: 140px;
+  padding-left: 2px;
+  border-radius: 0;
+}
 
-      .leaflet-popup-content-wrapper, .leaflet-popup-tip{
-        background: #333;
-        color: #eeeeee;
-      }
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #333;
+  color: #eeeeee;
+}
 
-      .leaflet-popup-content-wrapper img{
-        border-radius: 50%;
-        /* object-fit:contain; */
-        width: 70px;
-        height: 70px;
-      }
+.leaflet-popup-content-wrapper img {
+  border-radius: 50%;
+  /* object-fit:contain; */
+  width: 70px;
+  height: 70px;
+}
+
+.leaflet-popup-content p {
+  margin: 8px 0;
+}
+
+.rating {
+  color: red;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.LFprime {
+  color: rgb(255, 213, 0);
+  font-weight: bold;
+}
