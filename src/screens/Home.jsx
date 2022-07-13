@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Concept from "../components/Concept";
+import "../screens/Home.css";
 
+<<<<<<< HEAD
 const Home = () => {
     return (
         <div className="homeContainer">
@@ -10,6 +10,15 @@ const Home = () => {
         <Footer/>
     </div>
     )
+=======
+const Home = () =>{
+    return (
+    <div className="homeContainer">
+
+        <Concept/>
+        
+    </div>)
+>>>>>>> dev
 };
 
 export default Home;
