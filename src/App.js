@@ -6,32 +6,22 @@ import Footer from './components/Footer.jsx';
 import Home from "../src/screens/Home.jsx";
 import Header from "./components/Header.jsx";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Player from './components/Player.jsx';
-import { songdata } from './components/style/audio/audio.js';
+import ReactPlayer from 'react-player'
 
 function App() {
-  const[songs, setSongs] = useState(songdata)
   const[isplaying, setisplaying] = useState(false)
-  const [currentSong, setCurrentSong] = useState(songdata[0])
+  const[play, setPlay] = useState(false)
 
-  const audioElem =useRef();
-
-  useEffect(()=>{
-    if(isplaying) {
-      audioElem.current.play()
-    }
-    else {
-      audioElem.current.pause()
-    }
-  },[isplaying])
+  const songUrl = 'https://www.youtube.com/watch?v=6FrlCfkffVI'
 
   return (
     <div className="App">
-      <audio src="https://www.youtube.com/watch?v=6FrlCfkffVI" ref={audioElem}/>
       <Header/>
-      <Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem}/>
+      <Player isplaying={isplaying} setisplaying={setisplaying} play={play} setPlay={setPlay}/>
+      {play ? <ReactPlayer url={songUrl} playing={true} height='1px' width='1px'/> : <ReactPlayer url={songUrl} playing={false} height='1px' width='1px'/>}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/banditos' element={<Banditos />} />

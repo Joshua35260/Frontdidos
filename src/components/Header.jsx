@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import bandidosLogo from '../img/1.png';
+import Player from './Player';
 import './style/Header.css';
 
 const Header = () => {
