@@ -68,24 +68,38 @@ const Form = () => {
           <textarea id="subject" name="subject" placeholder="Votre message"></textarea>{"\n"}
 
           <label htmlFor="deadoralive">Dead or alive </label>
-          <div style={{flexDirection: 'row', justifySelf: 'center'}}>
-          <input type="radio" value={dead} name="deadoralive" onChange={(e) => setDead(e.target.value)} /> Mort
-          <input type="radio" value={alive} name="deadoralive" onChange={(e) => setAlive(e.target.value)}/> Vif
-          <input type="radio" value={deadoralive} name="deadoralive" onChange={(e) => setDeadoralive(e.target.value)}/> Mort ou Vif 
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '2ch'}}>
+              <div>
+                <input type="radio" value={dead} name="deadoralive" onChange={(e) => setDead(e.target.value)} /> Mort
+              </div>
+              <div>
+                <input type="radio" value={alive} name="deadoralive" onChange={(e) => setAlive(e.target.value)}/> Vif
+              </div>
+              <div>
+                <input type="radio" value={deadoralive} name="deadoralive" onChange={(e) => setDeadoralive(e.target.value)}/> Mort ou Vif 
+              </div>
           </div>
 
-          <div style={{display: 'flex', flexDirection: 'row'}}>
-          <label htmlFor="status">En liberté?</label>
-          <input type="checkbox" value={status} name="status" onChange={(e) => setStatus(e.target.value)}/> {status && "Oui"}
+          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', margin: '2ch 0'}}>
+            <div>
+              <label htmlFor="status">En liberté?</label>
+            </div>
+            <div>
+              <input type="checkbox" value={status} name="status" onChange={(e) => setStatus(e.target.value)}/> {status && "Oui"}
+            </div>
           </div>
           
           <label htmlFor="ville">Localisation</label>
           <input type="text" id="ville" name="ville" placeholder="Las Vegas" value={ville} onChange={(e) => setVille(e.target.value)}/>
           
           <label htmlFor="rating">Rating</label>
-          <div style={{flexDirection: 'row'}}>
-          <input type="checkbox" value={rating} name="Trés recherché" onChange={(e) => setRating(true)}/>Très recherché
-          <input type="checkbox" value={rating} name="juste recherché" onChange={(e) => setRating(false)}/>Juste recherché
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', marginBottom: '2ch', marginTop: '1ch'}}>
+              <div >
+                <input type="checkbox" value={rating} name="Trés recherché" onChange={(e) => setRating(true)}/>Très recherché
+              </div>
+              <div>
+                <input type="checkbox" value={rating} name="juste recherché" onChange={(e) => setRating(false)}/>Juste recherché
+              </div>
           </div>
           
           <input type="submit" value="Envoyer" onSubmit={axios.post('http://localhost:4242/bandits', {name, surname, prime, age, description, crimes, dead, alive, deadoralive, status, image, ville, rating})}/>
