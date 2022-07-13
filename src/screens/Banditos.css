@@ -5,12 +5,7 @@
   background-size:cover ;
   width: 100%;
 }
-.banditos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
+
 .guns{
   z-index: 1;
   height: 150px;
@@ -26,12 +21,6 @@
   margin: auto;
 }
 
-.banditosCards{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .banditosTilte{
   padding-top: 4px;
@@ -42,3 +31,9 @@
   margin-bottom: 20px;
 }
 
+.banditosCards {
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
