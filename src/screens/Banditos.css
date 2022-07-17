@@ -1,0 +1,39 @@
+.banditosContainer {
+  background-color: rgb(0, 0, 0);
+  background: no-repeat;
+  background-image: url("../img/desert.jpg") ;
+  background-size:cover ;
+  width: 100%;
+}
+
+.guns{
+  z-index: 1;
+  height: 150px;
+  width: 150px;
+}
+
+.wrap-leaf{
+  height: 60vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+.banditosTilte{
+  padding-top: 4px;
+  margin-top: 0;
+}
+
+.guns{
+  margin-bottom: 20px;
+}
+
+.banditosCards {
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
